@@ -7,6 +7,7 @@ import Benefits from '../components/Benefits/Benefits';
 import Company from '../components/Company/Company';
 import TrustPilot from '../components/TrustPilot/TrustPilot';
 import Blog from '../components/Blog/Blog';
+import GetStarted from '../components/GetStarted/GetStarted';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Company />
       <TrustPilot />
       <Blog />
+      <GetStarted />
       <FaqSection />
       <Contact />
     </>

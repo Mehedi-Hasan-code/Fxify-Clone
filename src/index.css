@@ -9,3 +9,35 @@
 *{
   font-family: "Plus Jakarta Sans", sans-serif;;
 }
+
+@theme {
+  @keyframes sparkle {
+    100%{
+      transform: translateY(-400%);
+    }
+  },
+
+  @keyframes dotLevitation {
+    0%, 100% {
+      transform: translateY(0);;
+    }
+    25%{
+      transform: translateY(-9px);
+    }
+    75%{
+      transform: translateY(9px);
+    }
+  },
+
+  @keyframes dotLevitationAlt {
+    0%, 100% {
+      transform: translateY(0);;
+    }
+    25%{
+      transform: translateY(9px);
+    }
+    75%{
+      transform: translateY(-9px);
+    }
+  }
+}
