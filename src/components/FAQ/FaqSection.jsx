@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ButtonSecondary from '../common/Buttons/ButtonSecondary'
+import ButtonAdvanced from '../common/Buttons/ButtonAdvanced';
 
 const FaqSection = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -60,12 +62,11 @@ const FaqSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-teal-500 hover:bg-teal-600 text-black font-semibold px-8 py-4 rounded-lg transition-colors duration-200">
-                See All FAQs
-              </button>
-              <button className="bg-gray-800 hover:bg-gray-700 text-white font-semibold px-8 py-4 rounded-lg border border-gray-700 transition-colors duration-200">
-                Chat with Support
-              </button>
+              <ButtonAdvanced label={'See All FAQs'} />
+                
+              <ButtonSecondary label={'Chat with Support'} />
+                
+
             </div>
           </div>
 

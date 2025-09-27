@@ -15,7 +15,7 @@
     100%{
       transform: translateY(-400%);
     }
-  },
+  }
 
   @keyframes dotLevitation {
     0%, 100% {
@@ -27,7 +27,7 @@
     75%{
       transform: translateY(9px);
     }
-  },
+  }
 
   @keyframes dotLevitationAlt {
     0%, 100% {

@@ -8,11 +8,13 @@ import Company from '../components/Company/Company';
 import TrustPilot from '../components/TrustPilot/TrustPilot';
 import Blog from '../components/Blog/Blog';
 import GetStarted from '../components/GetStarted/GetStarted';
+import HowItWorks from '../components/HowItWorks/HowItWorks';
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <HowItWorks />
       <AddOns />
       <Benefits />
       <Company />
