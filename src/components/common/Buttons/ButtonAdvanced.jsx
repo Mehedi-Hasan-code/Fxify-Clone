@@ -1,9 +1,9 @@
 import React from 'react';
 
-const ButtonAdvanced = ({ label }) => {
+const ButtonAdvanced = ({ label, width = 'w-fit' }) => {
   return (
     <button
-      className="relative group overflow-hidden flex px-4 py-[14px] z-40 justify-center items-center self-stretch w-fit min-w-[140px]
+      className={`relative group overflow-hidden flex px-4 py-[14px] z-40 justify-center items-center self-stretch min-w-[140px]
           rounded-md no-underline text-center cursor-pointer font-['Plus_Jakarta_Sans'] text-[14px] font-semibold leading-none
           border border-[rgba(29,170,145,0.8)] bg-[rgba(29,170,145,0.5)] text-white/70
           transition-all duration-700 ease-in-out
@@ -13,7 +13,7 @@ const ButtonAdvanced = ({ label }) => {
           hover:text-white 
           hover:bg-[rgba(29,170,145,0.3)] 
           hover:border hover:border-[rgba(29,170,145,0.8)] 
-          hover:shadow-[0_0_10px_7px_rgba(29,170,145,0.4)]"
+          hover:shadow-[0_0_10px_7px_rgba(29,170,145,0.4)] ${width}`}
     >
       {/* effect containers */}
       <div className="absolute inset-0 w-full h-full overflow-hidden opacity-0 transition-all duration-500 ease-in-out hover:opacity-100">

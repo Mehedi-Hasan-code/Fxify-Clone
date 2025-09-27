@@ -9,12 +9,14 @@ import TrustPilot from '../components/TrustPilot/TrustPilot';
 import Blog from '../components/Blog/Blog';
 import GetStarted from '../components/GetStarted/GetStarted';
 import HowItWorks from '../components/HowItWorks/HowItWorks';
+import Programs from '../components/Programs/Programs';
 
 const Home = () => {
   return (
     <>
       <Hero />
       <HowItWorks />
+      <Programs />
       <AddOns />
       <Benefits />
       <Company />
