@@ -10,6 +10,7 @@ import Blog from '../components/Blog/Blog';
 import GetStarted from '../components/GetStarted/GetStarted';
 import HowItWorks from '../components/HowItWorks/HowItWorks';
 import Programs from '../components/Programs/Programs';
+import OurPlatForm from '../components/OurPlatForm/OurPlatForm';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Programs />
       <AddOns />
       <Benefits />
+      <OurPlatForm />
       <Company />
       <TrustPilot />
       <Blog />
