@@ -2,7 +2,7 @@ import React from 'react';
 import { UsersRound } from 'lucide-react';
 const Community = () => {
   return (
-    <div className='flex-1 basis-[45%]'>
+    <div className='flex-1 basis-[100%] md:basis-[45%] lg:basis-0 p-2 lg:border-r lg:border-r-[#ffffff0d]'>
       <div className="rounded-[10px] border border-white/5 bg-[rgba(129,233,215,0.03)] backdrop-blur-[5px] gap-2 flex flex-col h-full">
         {/* header */}
         <div className="overflow-hidden flex items-center px-3 py-2 gap-2 border-b border-white/5 relative  before:content-[''] before:w-[150px] before:h-[25px] before:absolute before:left-[-5px] before:top-[-5px] before:bg-[rgba(29,170,144,0.25)] before:blur-[30px] before:rotate-[33.01deg]">
@@ -12,7 +12,7 @@ const Community = () => {
           </p>
         </div>
         {/* body */}
-        <div className="px-3 py-2 flex flex-col flex-nowrap gap-1 flex-1">
+        <div className="px-2 pb-2 flex flex-col flex-nowrap gap-1 flex-1">
           {/* active traders */}
           <div className="flex-1 rounded-[6px] border border-white/5 flex  items-stretch relative overflow-hidden">
             {/* left */}

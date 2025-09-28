@@ -1,42 +1,44 @@
 @import 'tailwindcss';
 
-/* Source_Code_Pro */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-/* Plus Jakarta Sans */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
 
-*{
-  font-family: "Plus Jakarta Sans", sans-serif;;
+.font-source-code {
+  font-family: 'Source Code Pro', monospace;
 }
 
 @theme {
   @keyframes sparkle {
-    100%{
+    100% {
       transform: translateY(-400%);
     }
   }
 
   @keyframes dotLevitation {
-    0%, 100% {
-      transform: translateY(0);;
+    0%,
+    100% {
+      transform: translateY(0);
     }
-    25%{
+    25% {
       transform: translateY(-9px);
     }
-    75%{
+    75% {
       transform: translateY(9px);
     }
   }
 
   @keyframes dotLevitationAlt {
-    0%, 100% {
-      transform: translateY(0);;
+    0%,
+    100% {
+      transform: translateY(0);
     }
-    25%{
+    25% {
       transform: translateY(9px);
     }
-    75%{
+    75% {
       transform: translateY(-9px);
     }
   }

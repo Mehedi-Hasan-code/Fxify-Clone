@@ -33,7 +33,7 @@ const DiscordSection = () => {
           </div>
 
           {/* channels */}
-          <div className="flex flex-wrap xl:flex-nowrap justify-center mt-[calc(-1*8px)] xl:mt-[calc(-1*96px)] gap-4 w-full max-w-6xl mx-auto">
+          <div className="flex flex-wrap lg:flex-nowrap justify-center mt-[calc(-1*8px)] xl:mt-[calc(-1*96px)] gap-4 w-full max-w-6xl mx-auto">
             {/* Asset Chats Card */}
             <div className="bg-[linear-gradient(180deg,rgba(114,137,218,0.03)_0%,rgba(114,137,218,0.1)_100%),url('/Discord/ch1.png')] bg-no-repeat bg-[position:center_bottom] bg-[length:100%_auto] flex flex-col flex-nowrap w-full max-w-[400px]  border border-[rgba(114,137,218,0.1)] rounded-[10px] backdrop-blur-[10px] p-6 gap-4 transition-all duration-500 ease-in-out min-h-[220px]">
               {/* heading */}
