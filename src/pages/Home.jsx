@@ -11,6 +11,7 @@ import GetStarted from '../components/GetStarted/GetStarted';
 import HowItWorks from '../components/HowItWorks/HowItWorks';
 import Programs from '../components/Programs/Programs';
 import OurPlatForm from '../components/OurPlatForm/OurPlatForm';
+import DiscordSection from '../components/DiscordSection/DiscordSection';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <HowItWorks />
       <Programs />
       <AddOns />
+      <DiscordSection />
       <Benefits />
       <OurPlatForm />
       <Company />
