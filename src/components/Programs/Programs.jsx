@@ -12,7 +12,7 @@ const Programs = () => {
       {/* bg left */}
       <div className="absolute left-0 bottom-0 w-auto h-full z-[-2]">
         <img
-          className="h-[200px] max-w-[100%] w-auto sm:h-[300px] md:h-full -z-10]"
+          className="h-[200px] max-w-[100%] w-auto sm:h-[300px] lg:h-full -z-10]"
           src="/Programs/prog-left.png"
           alt="prog image"
         />
@@ -21,29 +21,30 @@ const Programs = () => {
       {/* bg right */}
       <div className="absolute right-0 bottom-0 w-auto h-full">
         <img
-          className="h-[200px] max-w-[100%] w-auto sm:h-[300px] md:h-full z-[-2]"
+          className="h-[200px] max-w-[100%] w-auto sm:h-[300px] lg:h-full z-[-2]"
           src="/Programs/prog-right.png"
           alt="prog image"
         />
       </div>
 
       {/* section container */}
-      <div className="max-w-[1440px] mx-auto relative w-full z-30">
+      <div className="max-w-[1440px] mx-auto w-95/100 relative z-30 pt-32">
         <div className="w-11/12 mx-auto">
           <div className="flex flex-col flex-nowrap items-center gap-2">
             {/* top heading */}
             <SectionName label={'PROGRAMS'} />
-            <SectionTitle label={'We have a program for every trader'} />
+            <SectionTitle label={`We have a program <br /> for every trader`} />
             <SectionDetails
               label={
                 'Whether you’re looking for speed, accessibility, structure, or flexibility — we have everything you need in a prop firm.'
               }
+              width='w-[70%]'
             />
 
             {/* Table */}
-            <div className="flex p-4 mt-6 flex-wrap md:flex-nowrap gap-2 md:gap-0">
+            <div className="flex p-4 mt-6 flex-wrap lg:flex-nowrap gap-2 lg:gap-0">
               {/* card 1 */}
-              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] md:my-[calc(-1*16px)] md:py-4">
+              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] lg:my-[calc(-1*16px)] lg:py-4 2xl:min-w-[360px]">
                 {/* table inline */}
                 <div className="flex flex-col flex-nowrap h-full">
                   {/* table top */}
@@ -122,7 +123,7 @@ const Programs = () => {
               </div>
 
               {/* card 2 */}
-              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] lg:rounded-[0] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] md:rounded-[0px]">
+              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] xl:rounded-[0] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] lg:rounded-[0px] 2xl:min-w-[360px]">
                 {/* table inline */}
                 <div className="flex flex-col flex-nowrap h-full">
                   {/* table top */}
@@ -202,7 +203,7 @@ const Programs = () => {
               </div>
 
               {/* card 3 */}
-              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] lg:rounded-[0] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] md:rounded-[0px]">
+              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] xl:rounded-[0] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] lg:rounded-[0px] 2xl:min-w-[360px]">
                 {/* table inline */}
                 <div className="flex flex-col flex-nowrap h-full">
                   {/* table top */}
@@ -290,7 +291,7 @@ const Programs = () => {
               </div>
 
               {/* card 4 */}
-              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] md:rounded-tl-[0px] md:rounded-bl-[0px]">
+              <div className="flex-1 basis-[100%] sm:basis-[45%] lg:basis-0 rounded-[10px] border border-[#ffffff0d] bg-[rgba(255,255,255,0.03)] backdrop-blur-[10px] z-0 relative min-h-[440px] border-t border-t-[#ffffff0d]  border-b border-b-[#ffffff0d] border-l border-l-[#ffffff0d] lg:rounded-tl-[0px] lg:rounded-bl-[0px] 2xl:min-w-[360px]">
                 {/* table inline */}
                 <div className="flex flex-col flex-nowrap h-full">
                   {/* table top */}
@@ -373,7 +374,7 @@ const Programs = () => {
       </div>
 
       {/* bg bottom */}
-      <div className="hidden md:block absolute w-full h-[100px] bottom-0 left-0 opacity-15 bg-[#1DAA91] mix-blend-lighten blur-[50px] z-20"></div>
+      <div className="hidden lg:block absolute w-full h-[100px] bottom-0 left-0 opacity-15 bg-[#1DAA91] mix-blend-lighten blur-[50px] z-20"></div>
     </div>
   );
 };

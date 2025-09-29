@@ -47,16 +47,16 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section className="max-w-[1440px] w-11/12 mx-auto">
+    <section className="max-w-[1440px] w-95/100 mx-auto my-10 sm:my-20 md:my-24">
       {/* Heading */}
       <div className="text-center mb-8 md:mb-14">
-        <p className="text-[12px] tracking-[0.2em] text-white/60 mb-3">
+        <p className="text-[12px] tracking-[0.2em] text-white/60 mb-3 ">
           BENEFITS
         </p>
-        <h2 className="text-[28px] md:text-[36px] lg:text-[40px] leading-[120%] tracking-[-0.02em] font-semibold bg-[linear-gradient(120deg,#FFF_44.15%,#1DAA91_87.75%)] bg-clip-text text-transparent">
+        <h2 className="text-[28px] md:text-[36px] lg:text-[40px] leading-[120%] tracking-[-0.02em] font-semibold bg-[linear-gradient(120deg,#FFF_44.15%,#1DAA91_87.75%)] bg-clip-text text-transparent ">
           The FXIFY Advantage
         </h2>
-        <p className="text-white/60 text-sm md:text-base max-w-[850px] mx-auto mt-3">
+        <p className="text-white/60 text-sm md:text-base max-w-[850px] mx-auto mt-3 w-[95%] sm:w-[40%]">
           Experience the FXIFY Advantage – on‑demand payouts, flexible funding,
           and tailored programs built to elevate your trading performance.
         </p>
@@ -78,7 +78,7 @@ const Benefits = () => {
               />
             </div>
             {/* title */}
-            <div className="mt-44 pl-4">
+            <div className="mt-48 pl-4">
               <h3 className="text-[16px] md:text-[18px] font-semibold text-white">
                 {item.title}
               </h3>

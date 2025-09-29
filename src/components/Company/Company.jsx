@@ -2,7 +2,7 @@ import React from 'react';
 
 const Company = () => {
   return (
-    <div className="max-w-[1440px] w-full mx-auto relative">
+    <div className="max-w-[1440px] w-full mx-auto relative py-20 sm:py-28">
       <div className="flex flex-col flex-wrap w-11/12 mx-auto">
         {/* title */}
         <div className="text-4xl text-center sm:text-5xl md:text-6xl tracking-[-1.3px] sm:tracking-[-2.3px] md:tracking-[-3.3px] bg-[linear-gradient(to_right,rgba(255,255,255,0.7)_0.16%,#1DAA91_51.3%,rgba(255,255,255,0.7)_102.45%)] bg-clip-text text-transparent [mask-image:linear-gradient(to_right,rgba(255,255,255,0.1),#fff,rgba(255,255,255,0.1))]">

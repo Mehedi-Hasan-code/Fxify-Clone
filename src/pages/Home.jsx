@@ -19,10 +19,10 @@ const Home = () => {
       <Hero />
       <HowItWorks />
       <Programs />
-      <AddOns />
-      <DiscordSection />
       <Benefits />
       <OurPlatForm />
+      <AddOns />
+      <DiscordSection />
       <Company />
       <TrustPilot />
       <Blog />

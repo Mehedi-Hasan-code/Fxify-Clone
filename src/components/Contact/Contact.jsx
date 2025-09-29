@@ -52,7 +52,15 @@ const Contact = () => {
               </h4>
               <div className="max-w-[120px] mt-[24px]">
                 <button className="w-full">
-                  <ButtonAdvanced label={'Connect'} />
+                  <ButtonAdvanced
+                    label={'Connect'}
+                    border="border-[#7289dacc]"
+                    bg="bg-[#7289da80]"
+                    hoverBorder="hover:border-[#7289dacc]"
+                    hoverBg="bg-[#7289da80]"
+                    hoverShadow="hover:shadow-[0px_0px_10px_7px_rgba(114,137,218,0.4)]"
+                    discord={true}
+                  />
                 </button>
               </div>
             </div>
@@ -72,8 +80,8 @@ const Contact = () => {
         <div className="flex-1 bg-[linear-gradient(180deg,rgba(114,137,218,0.08)_0%,rgba(114,137,218,0.03)_100%)] border border-[rgba(114,137,218,0.15)] rounded-[10px] relative overflow-hidden min-h-[180px]">
           {/* Social Content */}
           <div className="flex flex-col justify-center px-7 py-6 flex-1 z-10">
-            <div className="text-[16px] text-[#7289da] uppercase leading-tight mb-2">
-              JOIN OUR
+            <div className="uppercase text-[#D4F7F1] text-[18px] not-italic font-normal leading-[120%]">
+              Follow Us
             </div>
           </div>
 

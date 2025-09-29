@@ -6,7 +6,7 @@ import SectionTitle from '../common/h,p,tags/SectionTitle'
 const HowItWorks = () => {
   return (
     <div>
-      <div className='max-w-[1440px] w-11/12 mx-auto '>
+      <div className='max-w-[1440px] w-95/100 mx-auto my-10 sm:my-20'>
         <div className='flex flex-col flex-nowrap gap-2'>
 
           {/* Title */}

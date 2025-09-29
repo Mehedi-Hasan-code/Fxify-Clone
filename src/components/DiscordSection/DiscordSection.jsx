@@ -5,7 +5,7 @@ const DiscordSection = () => {
     <div className="relative overflow-hidden min-h-[600px]">
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-[rgba(114,137,218,0.3)] via-transparent to-transparent pointer-events-none"></div>
-      <div className="max-w-[1440px] w-11/12 mx-auto relative">
+      <div className="max-w-[1440px] w-95/100 mx-auto relative">
         <div className="flex flex-col flex-nowrap items-center gap-2">
           {/* top heading */}
           <div className="uppercase text-[#7289da] text-[14px] not-italic font-normal leading-[120%] opacity-60 text-center">
@@ -422,8 +422,16 @@ const DiscordSection = () => {
           </div>
 
           {/* CTA */}
-          <div className="mt-8 flex flex-col flex-nowrap items-center gap-2">
-            <ButtonAdvanced label={'Join Discord'} />
+          <div className="mt-8 flex flex-col flex-nowrap items-center gap-2 pb-20 sm:pb-28">
+            <ButtonAdvanced
+              label={'Join Discord'}
+              border="border-[#7289dacc]"
+              bg="bg-[#7289da80]"
+              hoverBorder="hover:border-[#7289dacc]"
+              hoverBg="bg-[#7289da80]"
+              hoverShadow='hover:shadow-[0px_0px_10px_7px_rgba(114,137,218,0.4)]'
+              discord = {true}
+            />
           </div>
         </div>
       </div>

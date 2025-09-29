@@ -4,7 +4,7 @@ import React from 'react'
 const OurPlatForm = () => {
   return (
     <div>
-      <div className='max-w-[1440px] w-11/12 mx-auto'>
+      <div className='max-w-[1440px] w-95/100 mx-auto'>
       <div className='flex flex-col flex-nowrap gap-2'>
         
         {/* Top Heading */}
@@ -14,7 +14,7 @@ const OurPlatForm = () => {
         <h3 className='w-fit text-[30px] not-italic font-medium leading-[120%] tracking-[-1.5px] bg-[linear-gradient(120deg,#FFF_44.15%,#1DAA91_87.75%)] bg-clip-text text-transparent'>Broker-Backed, Built to Last</h3>
 
         {/* paragraph */}
-        <p className='text-[rgba(255,255,255,0.6)] text-[16px] not-italic font-normal leading-[130%]'>Led by decades of brokerage and industry expertise, we’ve built a prop firm that is secure, reliable, and sustainable. This is why traders trust us.</p>
+        <p className='text-[rgba(255,255,255,0.6)] text-[16px] not-italic font-normal leading-[130%] w-[95%] sm:w-[40%]'>Led by decades of brokerage and industry expertise, we’ve built a prop firm that is secure, reliable, and sustainable. This is why traders trust us.</p>
 
         {/* cards */}
         <div className='flex flex-wrap mt-8'>
