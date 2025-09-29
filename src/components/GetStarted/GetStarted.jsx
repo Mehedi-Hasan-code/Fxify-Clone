@@ -3,14 +3,14 @@ import SectionName from '../common/h,p,tags/SectionName';
 import ButtonAdvanced from '../common/Buttons/ButtonAdvanced'
 const GetStarted = () => {
   return (
-    <div className="bg-[url('/GetStarted/gsbg.svg')] bg-no-repeat bg-center bg-[length:100%_auto]">
+    <div className="bg-[url('/GetStarted/gsbg.svg')] bg-no-repeat bg-center bg-[length:100%_auto] pt-[128px]">
       <div className="max-w-[1440px] w-11/12 mx-auto relative">
         <div className="flex flex-col flex-nowrap items-center gap-4">
           {/* top heading */}
           <SectionName label={'Get Started'} />
 
           {/* h3 */}
-          <h3 className="text-[32px] tracking-[-1.5px] sm:text-[36px] sm:tracking-[-2px] md:text-[42px] text-white text-center font-[500] leading-[120%]">
+          <h3 className="text-[32px] tracking-[-1.5px] sm:text-[42px] md:text-[48px] sm:tracking-[-2px] text-white text-center font-[500] leading-[120%]">
             Get Funded with the{' '}
             <span className="block bg-gradient-to-b from-white via-white/90 to-[#1DAA91] bg-clip-text text-transparent">
               {' '}
@@ -26,7 +26,7 @@ const GetStarted = () => {
           </p>
 
           {/* cta */}
-          <div>
+          <div className='mt-8'>
             <ButtonAdvanced label={'Become a Funded Trader'} />
           </div>
         </div>

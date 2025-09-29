@@ -92,7 +92,7 @@ const TrustPilot = () => {
   const renderReview = (review) => (
     <div
       key={review.id}
-      className="flex flex-col flex-nowrap gap-4 p-4 rounded-[10px] border border-white/5 bg-[linear-gradient(180deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0)_100%)] mb-6"
+      className="flex flex-col flex-nowrap gap-4 p-4 rounded-[10px] border border-white/5 bg-[linear-gradient(180deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0)_100%)] mb-2"
     >
       {/* top */}
       <div className="flex items-center gap-2">
