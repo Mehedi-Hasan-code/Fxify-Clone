@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import ButtonSecondary from '../common/Buttons/ButtonSecondary'
 import ButtonAdvanced from '../common/Buttons/ButtonAdvanced';
+import SectionDetails from '../common/h,p,tags/SectionDetails'
+import SectionName from '../common/h,p,tags/SectionName'
+import SectionTitle from '../common/h,p,tags/SectionTitle'
 
 const FaqSection = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -44,21 +47,17 @@ const FaqSection = () => {
   };
 
   return (
-    <section className=" text-white py-20">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <section className=" text-white py-20 sm:py-28">
+      <div className="max-w-7xl mx-auto w-95/100">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_1.3fr] gap-4 items-start">
           {/* Left Side - Content */}
-          <div className="space-y-8">
+          <div className="space-y-4">
             <div className="space-y-4">
-              <p className="text-sm text-gray-300 uppercase tracking-wider">
-                FAQ
-              </p>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                Have <span className="text-teal-400">Questions?</span>
-              </h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Check our FAQs or start a chat with our support team.
-              </p>
+              <div className='flex justify-start'><SectionName label = "FAQ" /></div>
+              <div>
+                <SectionTitle label={'Have Questions?'} />
+              </div>
+              <p className='text-white/60 text-base font-normal leading-[130%]'>Check our FAQs or start a chat with our support team.</p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -73,18 +72,18 @@ const FaqSection = () => {
           {/* Right Side - FAQ List */}
           <div className="space-y-4">
             {faqData.map((faq) => (
-              <div key={faq.id} className="border-b border-gray-800 pb-4">
+              <div key={faq.id} className="transition-all duration-[800ms] ease-in-out border-b border-white/10 py-2 px-4 hover:cursor-pointer hover:bg-white/[0.03]">
                 <button
                   onClick={() => toggleFaq(faq.id)}
                   className="w-full text-left flex items-center justify-between py-4 group"
                 >
-                  <span className="text-lg font-medium pr-4 group-hover:text-teal-400 transition-colors duration-200">
+                  <span className="text-lg font-medium pr-4 transition-colors duration-200">
                     {faq.question}
                   </span>
                   <div className="flex-shrink-0">
                     <div
-                      className={`w-6 h-6 flex items-center justify-center transition-transform duration-200 ${
-                        openFaq === faq.id ? 'rotate-45' : ''
+                      className={`w-6 h-6 flex items-center justify-center transition-transform duration-1000 ${
+                        openFaq === faq.id ? 'rotate-180' : ''
                       }`}
                     >
                       <svg
