@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar.jsx/Navbar';
 import Footer from '../components/Footer/Footer';
 import PromoBanner from '../components/PromoBanner/PromoBanner';
 import ScrollToTop from '../components/ScrollToTop/ScrollToTop';
+import Chat from '../components/Chat/Chat';
 
 const RootLayout = () => {
   return (
@@ -14,6 +15,7 @@ const RootLayout = () => {
       {/* fixed on screen */}
       <div>
         <PromoBanner />
+        <Chat />
       </div>
       <ScrollToTop />
     </div>
