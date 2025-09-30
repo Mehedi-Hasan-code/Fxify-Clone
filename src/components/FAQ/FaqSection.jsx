@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import ButtonSecondary from '../common/Buttons/ButtonSecondary'
+import ButtonSecondary from '../common/Buttons/ButtonSecondary';
 import ButtonAdvanced from '../common/Buttons/ButtonAdvanced';
-import SectionDetails from '../common/h,p,tags/SectionDetails'
-import SectionName from '../common/h,p,tags/SectionName'
-import SectionTitle from '../common/h,p,tags/SectionTitle'
+import SectionName from '../common/h,p,tags/SectionName';
+import SectionTitle from '../common/h,p,tags/SectionTitle';
 
 const FaqSection = () => {
   const [openFaq, setOpenFaq] = useState(null);
@@ -53,26 +52,31 @@ const FaqSection = () => {
           {/* Left Side - Content */}
           <div className="space-y-4">
             <div className="space-y-4">
-              <div className='flex justify-start'><SectionName label = "FAQ" /></div>
+              <div className="flex justify-start">
+                <SectionName label="FAQ" />
+              </div>
               <div>
                 <SectionTitle label={'Have Questions?'} />
               </div>
-              <p className='text-white/60 text-base font-normal leading-[130%]'>Check our FAQs or start a chat with our support team.</p>
+              <p className="text-white/60 text-base font-normal leading-[130%]">
+                Check our FAQs or start a chat with our support team.
+              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <ButtonAdvanced label={'See All FAQs'} />
-                
-              <ButtonSecondary label={'Chat with Support'} />
-                
 
+              <ButtonSecondary label={'Chat with Support'} />
             </div>
           </div>
 
           {/* Right Side - FAQ List */}
           <div className="space-y-4">
             {faqData.map((faq) => (
-              <div key={faq.id} className="transition-all duration-[800ms] ease-in-out border-b border-white/10 py-2 px-4 hover:cursor-pointer hover:bg-white/[0.03]">
+              <div
+                key={faq.id}
+                className="transition-all duration-[800ms] ease-in-out border-b border-white/10 py-2 px-4 hover:cursor-pointer hover:bg-white/[0.03]"
+              >
                 <button
                   onClick={() => toggleFaq(faq.id)}
                   className="w-full text-left flex items-center justify-between py-4 group"
@@ -103,13 +107,19 @@ const FaqSection = () => {
                   </div>
                 </button>
 
-                {openFaq === faq.id && (
-                  <div className="mt-4 pl-0 pr-12">
+                <div
+                  className={`grid transition-all duration-[500ms] ease-in-out overflow-hidden ${
+                    openFaq === faq.id
+                      ? 'grid-rows-[1fr] opacity-100 mt-4'
+                      : 'grid-rows-[0fr] opacity-0 mt-0'
+                  }`}
+                >
+                  <div className="min-h-0 pl-0 pr-12">
                     <p className="text-gray-300 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
-                )}
+                </div>
               </div>
             ))}
           </div>
