@@ -6,6 +6,13 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.overflow-x-clip,
+html,
+body {
+  overflow-x: clip;
+  width: 100%;
+}
+
 .font-source-code {
   font-family: 'Source Code Pro', monospace;
 }

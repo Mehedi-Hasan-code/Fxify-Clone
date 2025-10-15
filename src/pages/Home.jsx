@@ -12,15 +12,19 @@ import HowItWorks from '../components/HowItWorks/HowItWorks';
 import Programs from '../components/Programs/Programs';
 import OurPlatForm from '../components/OurPlatForm/OurPlatForm';
 import DiscordSection from '../components/DiscordSection/DiscordSection';
+import Payouts from '../components/Payouts/Payouts';
+import Pricing from '../components/Pricing/Pricing';
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <Pricing />
       <HowItWorks />
       <Programs />
       <Benefits />
       <OurPlatForm />
+      <Payouts />
       <AddOns />
       <DiscordSection />
       <Company />

@@ -3,7 +3,7 @@ import SectionName from '../common/h,p,tags/SectionName';
 import ButtonAdvanced from '../common/Buttons/ButtonAdvanced'
 const GetStarted = () => {
   return (
-    <div className="bg-[url('/GetStarted/gsbg.svg')] bg-no-repeat bg-center bg-[length:100%_auto] pt-[128px]">
+    <div className="bg-[url('/GetStarted/gsbg.svg')] bg-no-repeat bg-center bg-[length:100%_auto] pt-[128px] my-10">
       <div className="max-w-[1440px] w-11/12 mx-auto relative">
         <div className="flex flex-col flex-nowrap items-center gap-4">
           {/* top heading */}

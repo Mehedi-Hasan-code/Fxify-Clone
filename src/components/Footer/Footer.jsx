@@ -7,7 +7,7 @@ const Footer = () => {
         {/* links */}
         <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-6 px-6">
           {/* flex item 1 */}
-          <div className="w-full col-span-2 md:col-span-1 py-4 flex flex-col sm:p-5 lg:p-6">
+          <div className="w-full col-span-1 md:col-span-1 py-4 flex flex-col sm:p-5 lg:p-6">
             {/* logo */}
             <div className="mt-4">
               <span>

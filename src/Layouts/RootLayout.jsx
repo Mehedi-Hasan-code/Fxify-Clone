@@ -8,16 +8,17 @@ import Chat from '../components/Chat/Chat';
 
 const RootLayout = () => {
   return (
-    <div className="bg-[#0e1017] min-h-screen">
+    <div className="bg-[#0e1017] min-h-screen relative">
       <Navbar />
       <Outlet />
       <Footer />
       {/* fixed on screen */}
       <div>
-        <PromoBanner />
+        <ScrollToTop />
         <Chat />
       </div>
-      <ScrollToTop />
+
+      <PromoBanner />
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ButtonAdvanced = ({
   label,
@@ -10,8 +10,21 @@ const ButtonAdvanced = ({
   hoverShadow = 'hover:shadow-[0_0_10px_7px_rgba(29,170,145,0.4)]',
   discord = false,
 }) => {
+  const [isTouched, setIsTouched] = useState(false);
+
+  const handleTouchStart = () => {
+    setIsTouched(true);
+  };
+
+  const handleTouchEnd = () => {
+    setTimeout(() => {
+      setIsTouched(false);
+    }, 150);
+  };
   return (
     <button
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       className={`relative group overflow-hidden flex px-4 py-[14px] z-40 justify-center items-center self-stretch min-w-[140px]
           rounded-md no-underline text-center cursor-pointer font-['Plus_Jakarta_Sans'] text-[14px] font-semibold leading-none
           border ${border} ${bg} text-white/70
@@ -22,17 +35,31 @@ const ButtonAdvanced = ({
               ? "before:opacity-0 before:transition-[inherit] before:content-[''] before:bg-[radial-gradient(60%_90%_at_center_bottom,rgba(114,137,218,0.5),rgba(29,170,145,0))]"
               : 'before:bg-[radial-gradient(60%_90%_at_center_bottom,rgba(29,170,145,0.5),rgba(29,170,145,0))] before:opacity-0 before:transition-all before:duration-700 before:ease-in-out'
           }
-          hover:text-white 
-          ${hoverBg} 
-          ${hoverShadow}
-          hover:border ${hoverBorder} 
+          hover:text-white focus:text-white ${isTouched ? 'text-white' : ''}
+          ${hoverBg} focus:bg-[#1daa9180] ${isTouched ? 'bg-[#1daa9180]' : ''}
+          ${hoverShadow} focus:shadow-[0_0_10px_7px_rgba(29,170,145,0.4)] ${
+        isTouched ? 'shadow-[0_0_10px_7px_rgba(29,170,145,0.4)]' : ''
+      }
+          hover:border ${hoverBorder} focus:border ${hoverBorder} ${
+        isTouched ? `border ${hoverBorder}` : ''
+      }
           
-          hover:before:h-full hover:before:opacity-100 ${width}`}
+          hover:before:h-full hover:before:opacity-100 focus:before:h-full focus:before:opacity-100 ${
+            isTouched ? 'before:h-full before:opacity-100' : ''
+          } ${width}`}
     >
       {/* effect containers */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden opacity-0 transition-all duration-500 ease-in-out hover:opacity-100">
+      <div
+        className={`absolute inset-0 w-full h-full overflow-hidden transition-all duration-500 ease-in-out hover:opacity-100 focus-within:opacity-100 ${
+          isTouched ? 'opacity-100' : 'opacity-0'
+        }`}
+      >
         {/* sparkle 1 */}
-        <div className="absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[10%] bottom-0 translate-y-[100px] group-hover:animate-[sparkle_1.4s_linear_infinite]">
+        <div
+          className={`absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[10%] bottom-0 translate-y-[100px] group-hover:animate-[sparkle_1.4s_linear_infinite] group-focus-within:animate-[sparkle_1.4s_linear_infinite] ${
+            isTouched ? 'animate-[sparkle_1.4s_linear_infinite]' : ''
+          }`}
+        >
           {/* s blur */}
           <div className="w-[12px] h-[12px] rounded-full bg-white/70 relative z-10 filter blur-[6px]"></div>
 
@@ -41,7 +68,11 @@ const ButtonAdvanced = ({
         </div>
 
         {/* sparkle 2 */}
-        <div className="absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[30%] bottom-0 translate-y-[80px] group-hover:animate-[sparkle_0.8s_linear_infinite]">
+        <div
+          className={`absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[30%] bottom-0 translate-y-[80px] group-hover:animate-[sparkle_0.8s_linear_infinite] group-focus-within:animate-[sparkle_0.8s_linear_infinite] ${
+            isTouched ? 'animate-[sparkle_0.8s_linear_infinite]' : ''
+          }`}
+        >
           {/* s blur */}
           <div className="w-[12px] h-[12px] rounded-full bg-white/70 relative z-10 filter blur-[6px]"></div>
 
@@ -49,7 +80,11 @@ const ButtonAdvanced = ({
           <div className="w-px h-[40px] rounded-[2px] mt-[-7px] relative z-20 bg-[linear-gradient(to_bottom,rgba(255,255,255,0.8),transparent)]"></div>
         </div>
         {/* sparkle 3 */}
-        <div className="absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[70%] bottom-0 translate-y-[120px] group-hover:animate-[sparkle_1.2s_linear_infinite]">
+        <div
+          className={`absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[70%] bottom-0 translate-y-[120px] group-hover:animate-[sparkle_1.2s_linear_infinite] group-focus-within:animate-[sparkle_1.2s_linear_infinite] ${
+            isTouched ? 'animate-[sparkle_1.2s_linear_infinite]' : ''
+          }`}
+        >
           {/* s blur */}
           <div className="w-[12px] h-[12px] rounded-full bg-white/70 relative z-10 filter blur-[6px]"></div>
 
@@ -58,7 +93,11 @@ const ButtonAdvanced = ({
         </div>
 
         {/* sparkle 4 */}
-        <div className="absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[90%] bottom-0 translate-y-[90px] group-hover:animate-[sparkle_1.3s_linear_infinite]">
+        <div
+          className={`absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[90%] bottom-0 translate-y-[90px] group-hover:animate-[sparkle_1.3s_linear_infinite] group-focus-within:animate-[sparkle_1.3s_linear_infinite] ${
+            isTouched ? 'animate-[sparkle_1.3s_linear_infinite]' : ''
+          }`}
+        >
           {/* s blur */}
           <div className="w-[12px] h-[12px] rounded-full bg-white/70 relative z-10 filter blur-[6px]"></div>
 
@@ -67,7 +106,11 @@ const ButtonAdvanced = ({
         </div>
 
         {/* sparkle 5 */}
-        <div className="absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[80%] bottom-0 translate-y-[160px] group-hover:animate-[sparkle_1.1s_linear_infinite]">
+        <div
+          className={`absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[80%] bottom-0 translate-y-[160px] group-hover:animate-[sparkle_1.1s_linear_infinite] group-focus-within:animate-[sparkle_1.1s_linear_infinite] ${
+            isTouched ? 'animate-[sparkle_1.1s_linear_infinite]' : ''
+          }`}
+        >
           {/* s blur */}
           <div className="w-[12px] h-[12px] rounded-full bg-white/70 relative z-10 filter blur-[6px]"></div>
 
@@ -76,7 +119,11 @@ const ButtonAdvanced = ({
         </div>
 
         {/* sparkle 6 */}
-        <div className="absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[20%] bottom-0 translate-y-[70px] group-hover:animate-[sparkle_1s_linear_infinite]">
+        <div
+          className={`absolute flex flex-col items-center w-auto transition-all duration-700 ease-in-out left-[20%] bottom-0 translate-y-[70px] group-hover:animate-[sparkle_1s_linear_infinite] group-focus-within:animate-[sparkle_1s_linear_infinite] ${
+            isTouched ? 'animate-[sparkle_1s_linear_infinite]' : ''
+          }`}
+        >
           {/* s blur */}
           <div className="w-[12px] h-[12px] rounded-full bg-white/70 relative z-10 filter blur-[6px]"></div>
 
